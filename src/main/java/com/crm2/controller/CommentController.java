@@ -19,6 +19,12 @@ public class CommentController {
     //http://localhost:8080/api/v1/comments?postId=1
     @PostMapping
     public String createComment(@RequestBody Comment comment, @RequestParam long postId) {
+
+System.out.println("rohit");
+System.out.println("koche");
+System.out.println(100);
+
+
         Post post = postRepository.findById(postId).get();
         // we are getting post object address
         comment.setPost(post);
