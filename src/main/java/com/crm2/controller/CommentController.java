@@ -23,7 +23,8 @@ public class CommentController {
 System.out.println("rohit");
 System.out.println("koche");
 System.out.println(100);
-
+System.out.println(200);
+        System.out.println(300);
 
         Post post = postRepository.findById(postId).get();
         // we are getting post object address
